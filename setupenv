@@ -7,7 +7,7 @@ if [ ! -f "${JAR}" ]; then
 else
   echo "${JARPATH} exists"
 fi
-export CLASSPATH=${JARPATH}:${CLASSPATH}
+export CLASSPATH=${JARPATH}:.
 alias antlr4='java -cp ${CLASSPATH} -Xmx1g org.antlr.v4.Tool'
 alias grun='java -cp ${CLASSPATH} org.antlr.v4.runtime.misc.TestRig'
 alias javac='javac -classpath ${CLASSPATH}'
