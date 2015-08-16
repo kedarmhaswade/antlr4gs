@@ -1,4 +1,7 @@
-// Generated from /Users/kmhaswade/Personal/ANTLR/mvn/hello/src/main/antlr4/Hello.g4 by ANTLR 4.5.1
+// Generated from Hello.g4 by ANTLR 4.5.1
+
+    package  org.kedar.antlrtut.hello;
+
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -16,7 +19,7 @@ public class HelloParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, ID=2, WS=3, INT=4;
+		T__0=1, ID=2, WS=3;
 	public static final int
 		RULE_r = 0;
 	public static final String[] ruleNames = {
@@ -27,7 +30,7 @@ public class HelloParser extends Parser {
 		null, "'hello'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
-		null, null, "ID", "WS", "INT"
+		null, null, "ID", "WS"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -92,11 +95,6 @@ public class HelloParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof HelloListener ) ((HelloListener)listener).exitR(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof HelloVisitor ) return ((HelloVisitor<? extends T>)visitor).visitR(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final RContext r() throws RecognitionException {
@@ -123,7 +121,7 @@ public class HelloParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\6\b\4\2\t\2\3\2\3"+
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\5\b\4\2\t\2\3\2\3"+
 		"\2\3\2\3\2\2\2\3\2\2\2\6\2\4\3\2\2\2\4\5\7\3\2\2\5\6\7\4\2\2\6\3\3\2\2"+
 		"\2\2";
 	public static final ATN _ATN =

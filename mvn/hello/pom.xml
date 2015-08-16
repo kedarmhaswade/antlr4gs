@@ -11,7 +11,7 @@
     <dependency>
     <groupId>org.antlr</groupId>
     <artifactId>antlr4-maven-plugin</artifactId>
-    <version>4.3</version>
+    <version>4.5.1</version>
     <type>maven-plugin</type>
     </dependency>
     <dependency>
@@ -26,7 +26,10 @@
 <plugin>
     <groupId>org.antlr</groupId>
     <artifactId>antlr4-maven-plugin</artifactId>
-    <version>4.3</version>
+    <version>4.5.1</version>
+    <configuration>
+        <outputDirectory> src/main/java/org/kedar/antlrtut/hello</outputDirectory>
+    </configuration>
     <executions>
         <execution>
             <goals>
@@ -42,19 +45,6 @@
         <configuration>
           <source>1.7</source>
           <target>1.7</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifest>
-              <mainClass>fully.qualified.MainClass</mainClass>
-            </manifest>
-          </archive>
-          <descriptorRefs>
-            <descriptorRef>jar-with-dependencies</descriptorRef>
-          </descriptorRefs>
         </configuration>
       </plugin>
       <plugin>

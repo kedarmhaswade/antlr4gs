@@ -1,4 +1,7 @@
-// Generated from /Users/kmhaswade/Personal/ANTLR/mvn/hello/src/main/antlr4/Hello.g4 by ANTLR 4.5.1
+// Generated from Hello.g4 by ANTLR 4.5.1
+
+    package  org.kedar.antlrtut.hello;
+
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
