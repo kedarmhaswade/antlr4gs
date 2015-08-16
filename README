@@ -2,3 +2,11 @@ Getting Started With ANTLR
 --------------------------
 
 Clone the repo :) and source ./setupenv
+
+One note: While running a grammar that has a package header, you will need to specify that in the argument to testrig (grun):
+
+```text
+➜  hello git:(master) grun org.kedar.antlrtut.hello.Hello r -gui -tree -text
+Warning: TestRig moved to org.antlr.v4.gui.TestRig; calling automatically
+hello man
+```
